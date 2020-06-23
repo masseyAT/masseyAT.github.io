@@ -22,7 +22,7 @@
 				<header id="header"><br><br>
 					<h1>Aaron Massey</h1>
 					<p><br>
-					My CV can be found <a href="https://1drv.ms/b/s!AoAmgg4qX6QsaxDEIPQZBEgbQ2o"><b>HERE</b></a>.</p>
+					My CV can be found <a href="https://1drv.ms/b/s!AoAmgg4qX6QscVdyO6kVke3lLj4"><b>HERE</b></a>.</p>
 					<p>massey.at@outlook.com</p>
 					<ul class="icons">
 					<li><a href="https://github.com/masseyAT" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
@@ -94,6 +94,63 @@
 							</section>
 
 					</div>
+
+
+					<!-- Header -->
+					<header id="header">
+						<h1>MMU Arcade</h1>
+						<p>Python</p>
+					</header>
+
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/15.png" alt="" /></span>
+								<p>I was project manager with a team of 5, to utilise a 15ft LED curtain for the university. I regularly met with the client to get their brief and give updates.
+									 A scrum development was used.
+									 The product finished as Pong game ran on Raspberry Pi, with a rolling text banner at the top to promote events around the university.
+									We then had to show our product in a showcase.
+								</p>
+								
+
+							</section>
+
+					</div>
+
+						<!-- Header -->
+						<header id="header">
+							<h1>RFID Door Lock</h1>
+							<p>Java</p>
+						</header>
+	
+						<div id="main">
+	
+							<!-- Content -->
+								<section id="content" class="main">
+									<span class="image main"><img src="images/phidg.png" alt="" /></span>
+									<p>A sensor recording system was created to record status of a door lock.
+										A database was set up on a server to record the RFID tag, date and time and success/fail of the attempt.
+										Authorized tag ID's were stored in the database with corresponding doors. So that only the correct door is opened when a tag is scanned. The lock and motor were communicated with using MQTT. <br>
+										Data was sent in JSON format.<br><br>
+										An Android Application was also created to open the lock.
+										<br><br>An overview of the process:
+									<ul>
+										<li>Create RFID object from scanned tag</li>
+										<li>Convert to JSON string and send to server</li>
+										<li>A SQL select statment is used to select all valid tags in database which match scanned tag</li>
+										<li>If true then another check is done on the door database to see if this tag matches this door</li>
+										<li>This attempt will then be inserted into the database</li>
+										<li>A valid or invalid JSON string will be returned, then a MQTT will start to broadcast to the lock telling it to open if valid</li>
+									</ul>
+									</p>
+
+									<a href="https://github.com/masseyAT/Chittr" class="button primary">View Code</a>
+									
+	
+								</section>
+	
+						</div>
 
 				<!-- Footer -->
 					<footer id="footer">
